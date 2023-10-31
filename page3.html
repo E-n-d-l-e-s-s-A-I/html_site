@@ -1,0 +1,157 @@
+<head>
+   <meta charset="utf-8">
+   <title>Гитары</title>
+</head>
+<body bgcolor="#ddf4e3" link="#d2691e" alink="#cc7722" vlink="#734222">
+ <ul type="none">
+      <li><a href="page1.html">Самые известные гитары</a></li>      
+      <li><a href="page3.html"><b><big>Список популярных гитар</big></b></a></li>
+</ul>
+<hr>
+
+<details>
+    <summary>График</summary>
+    <form>
+        <table>
+          <tbody>
+		  <tr>
+            <th>Значениe по оси OX</th>
+            <th>Результат</th>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="ox" value="0">Компания<br>
+              <input type="radio" name="ox" value="1">Страна<br>
+              <input type="radio" name="ox" value="3">Год<br>
+            </td>
+            <td>
+              <input type="checkbox" name="oy" value="0">Максимальная стоимость<br>
+              <input type="checkbox" name="oy" value="1">Минимальная стоимость<br>
+	      <input type="checkbox" name="oy" value="3">Количество гитар<br>
+            </td>
+          </tr>
+        </tbody></table>
+		<input type="button" value="Построить">
+		<p>Здесь будет график</p>
+	</form>	
+</details> 
+
+<details>
+    <summary>Фильтр</summary>
+    <form>
+        <p>
+           <label for="structure">Название:</label>
+		   <input type="text" name="structure">
+        </p>
+        <p>
+		    <label for="category">Компания:</label>
+            <input type="text" name="category">
+        </p>
+        <p>
+		   <label for="country">Страна:</label>
+          <input type="text" name="country">
+        </p>
+		 <p>
+		   <label for="city">Форма:</label>
+           <input type="text" name="language">
+        </p>
+ 		 <p>
+		  <label for="yFrom">Год: </label>
+           от <input type="text" name="yFrom"> до <input type="text" name="yTo">
+        </p>
+        <p>
+		   <label for="hFrom">стоимость:</label>
+           от <input type="text" name="vFrom"> до <input type="text" name="vTo">
+        </p>
+        <input type="button" value="Найти">		
+	</form>	
+</details> 
+
+<details>
+    <summary>Сортировка</summary>
+    <form>
+	  <p>
+          Первый уровень:
+          <select name="sortFirst">
+            <option value="0">Нет</option>
+            <option value="1">Название</option>
+            <option value="2">Компания</option>
+            <option value="3">Страна</option>
+            <option value="4">Год</option>
+	    <option value="6">Форма</option>
+            <option value="5">Стоимость</option>
+          </select>
+          по убыванию? <input type="checkbox" name="descFirst">
+        </p>  
+        <p>
+          Второй уровень:
+	    <select name="sortSecond">
+            <option value="0">Нет</option>
+            <option value="1">Название</option>
+            <option value="2">Компания</option>
+            <option value="3">Страна</option>
+            <option value="4">Год</option>
+	    <option value="6">форма</option>
+            <option value="5">Стоимость</option>
+          </select>
+          по убыванию? <input type="checkbox" name="descSecond">
+        </p>
+        <p>
+          Третий уровень:
+            <select name="sortThird">
+            <option value="0">Нет</option>
+            <option value="1">Название</option>
+            <option value="2">Компания</option>
+            <option value="3">Страна</option>
+            <option value="4">Год</option>
+	    <option value="6">форма</option>
+            <option value="5">Стоимость</option>
+          </select>
+          по убыванию? <input type="checkbox" name="descThird">
+        </p>
+      <input type="button" value="Сортировать">		
+	</form>	
+</details> 
+
+<table border="1" cellspacing="0" cellpadding="5">
+	<tbody><tr><th>Название</th><th>Компания</th><th>Страна</th><th>Год</th><th>Форма</th><th>Стоимость</th></tr>
+	<tr><td>Les Paul</td><td>Gibson</td><td>США</td><td>1952</td><td>LP</td><td>2999</td></tr>
+	<tr><td>Les Paul Standard</td><td>Gibson</td><td>США</td><td>1952</td><td>LP</td><td>2799</td></tr>
+	<tr><td>Les Paul Classic</td><td>Gibson</td><td>США</td><td>1990</td><td>LP</td><td>2199</td></tr>
+	<tr><td>Les Paul Studio</td><td>Gibson</td><td>США</td><td>1983</td><td>LP</td><td>1699</td></tr>
+	<tr><td>SG</td><td>Gibson</td><td>США</td><td>1961</td><td>SG</td><td>2199</td></tr>
+	<tr><td>Firebird</td><td>Gibson</td><td>США</td><td>1963</td><td>Firebird</td><td>1999</td></tr>
+	<tr><td>Flying V</td><td>Gibson</td><td>США</td><td>1958</td><td>Flying V</td><td>2499</td></tr>
+	<tr><td>Fender Jazzmaster</td><td>Fender</td><td>США</td><td>1958</td><td>Stratocaster</td><td>839</td></tr>
+	<tr><td>Fender Jaguar</td><td>Fender</td><td>США</td><td>1962</td><td>Stratocaster</td><td>829</td></tr>
+	<tr><td>Fender Mustang</td><td>Fender</td><td>США</td><td>1964</td><td>Stratocaster</td><td>1149</td></tr>
+	<tr><td>Stratocaster</td><td>Fendertd<td>США</td><td>1954</td><td>Stratocaster</td><td>999</td></tr>
+	<tr><td>Telecaster</td><td>Fender</td><td>США</td><td>1950</td><td>Telecaster</td><td>799</td></tr>
+	<tr><td>LTD M-1000</td><td>ESP</td><td>США</td><td>1990</td><td>Stratocaster</td><td>1399</td></tr>
+	<tr><td>E-II HORIZON FR-7</td><td>ESP</td><td>Япония</td><td>1991</td><td>Stratocaster</td><td>2799</td></tr>
+	<tr><td>M-I NTB</td><td>ESP</td><td>Япония</td><td>1995</td><td>Stratocaster</td><td>5579</td></tr>
+	<tr><td>HORIZON-III</td><td>ESP</td><td>Япония</td><td>1999</td><td>Stratocaster</td><td>5549</td></tr>
+	<tr><td>M-III </td><td>ESP</td><td>Япония</td><td>2010</td><td>Telecaster</td><td>8999</td></tr>
+	<tr><td>FRX CTM</td><td>ESP</td><td>Япония</td><td>2014</td><td>Stratocaster</td><td>5999</td></tr>
+	<tr><td>Eclipse</td><td>ESP</td><td>Япония</td><td>2015</td><td>Stratocaster</td><td>5799</td></tr>
+	<tr><td>Snapper-CTM-FM</td><td>ESP</td><td>Япония</td><td>2011</td><td>Stratocaster</td><td>4999</td></tr>
+	<tr><td>Snapper AS-BR</td><td>ESP</td><td>Япония</td><td>2015</td><td>Stratocaster</td><td>4499</td></tr>
+	<tr><td>Snapper-7 </td><td>ESP</td><td>Япония</td><td>2008</td><td>Stratocaster</td><td>3999</td></tr>
+	<tr><td>AZ2407F</td><td>Ibanez</td><td>Япония</td><td>2017</td><td>Stratocaster</td><td>2199</td></tr>
+	<tr><td>AZES Standard</td><td>Ibanez</td><td>Япония</td><td>2016</td><td>Telecaster</td><td>349</td></tr>
+	<tr><td>AZS2209B</td><td>Ibanez</td><td>Япония</td><td>2016</td><td>Stratocaster</td><td>1999</td></tr>
+	<tr><td>RG8870</td><td>Ibanez</td><td>Япония</td><td>2010</td><td>Stratocaster</td><td>3299</td></tr>
+	<tr><td>Q52</td><td>Ibanez</td><td>Япония</td><td>2011</td><td>Stratocaster</td><td>999</td></tr>
+	<tr><td>S6570SK</td><td>Ibanez</td><td>Япония</td><td>2018</td><td>Stratocaster</td><td>2249</td></tr>
+	<tr><td>SA460MBW</td><td>Ibanez</td><td>Япония</td><td>2018</td><td>Stratocaster</td><td>499</td></tr>
+	<tr><td>GSA60</td><td>Ibanez</td><td>Япония</td><td>2018</td><td>Stratocaster</td><td>499</td></tr>
+	<tr><td>XPTB620</td><td>Ibanez</td><td>Япония</td><td>2019</td><td>Star</td><td>1299</td></tr>
+	<tr><td>ICTB721 </td><td>Ibanez</td><td>Япония</td><td>2007</td><td>Iceman</td><td>1799</td></tr>
+	<tr><td>IC420 </td><td>Ibanez</td><td>Япония</td><td>2004</td><td>Iceman</td><td>699</td></tr>
+	<tr><td>AR420</td><td>Ibanez</td><td>Япония</td><td>2004</td><td>LPS</td><td>550</td></tr>
+	<tr><td>GRGM21</td><td>Ibanez</td><td>Япония</td><td>2005</td><td>LPS</td><td>300</td></tr>
+	<tr><td>GRGM21M</td><td>Ibanez</td><td>Япония</td><td>2005</td><td>LPS</td><td>350</td></tr>
+	<tr><td>RGDMS8</td><td>Ibanez</td><td>Япония</td><td>2011</td><td>LPS</td><td>1199	</td></tr>
+	<tr><td>RGD61ALA</td><td>Ibanez</td><td>Япония</td><td>2002</td><td>LPS</td><td>999</td></tr>
+	<tr><td>RGD71ALPA</td><td>Ibanez</td><td>Япония</td><td>2009</td><td>LPS</td><td>1399</td></tr>
+</body>
